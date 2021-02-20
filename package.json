@@ -1,20 +1,33 @@
 {
-  "name": "tz-blog",
+  "name": "tz44js-blog",
   "version": "1.0.0",
-  "description": "简易博客",
+  "description": "潭州教育44期 js 项目实战《简易个人博客》",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/yund7/tz-blog.git"
+    "url": "git+https://github.com/chuxiong/tz44js-blog.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/yund7/tz-blog/issues"
+    "url": "https://github.com/chuxiong/tz44js-blog/issues"
   },
-  "homepage": "https://github.com/yund7/tz-blog#readme"
+  "homepage": "https://github.com/chuxiong/tz44js-blog#readme",
+  "dependencies": {
+    "koa": "^2.5.2",
+    "koa-body": "^4.0.4",
+    "koa-compress": "^3.0.0",
+    "koa-logger": "^3.2.0",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.9.0",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.4",
+    "mongoose": "^5.2.12",
+    "pug": "^2.0.3"
+  }
 }
