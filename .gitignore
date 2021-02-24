@@ -101,10 +101,4 @@ dist
 .dynamodb/
 
 # TernJS port file
-.tern-port
 database/db/WiredTiger.lock
-database/db/WiredTiger.turtle
-database/db/diagnostic.data/metrics.interim
-.gitignore
-database/db/diagnostic.data/metrics.interim
-database/db/journal/WiredTigerLog.0000000006
