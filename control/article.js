@@ -10,6 +10,7 @@ exports.addPage = async (ctx) => {
   })
 }
 
+//通过routers\监听article下的post
 // 文章的发表（保存到数据库）
 exports.add = async ctx => {
   if(ctx.session.isNew){
