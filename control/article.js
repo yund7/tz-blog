@@ -75,8 +75,8 @@ exports.getList = async ctx => {
       path: "author",
       select: '_id username avatar'
     }) // mongoose 用于连表查询
-    .then(data => data)
-    .catch(err => console.log(err))
+    .then(data => data) //给方法传回调才会执行,否则前面的都不执行,或者then,或者exec(()=>{})
+    .catch(err => console.log(err)) //可以百度mongodb原子操作,看更多更新删除操作
 
 
   

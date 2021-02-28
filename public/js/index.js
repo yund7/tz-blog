@@ -4,15 +4,17 @@ layui.use(["element", "laypage"], () => {
   const $ = layui.$
   
   element.tabDelete('demo', 'xxx')
- 
+  console.log(parseInt($("#laypage").data("maxnum")));
+  console.log(parseInt($("#laypage").data("limit")));
   laypage.render({
     elem: "laypage",
-    count: $("#laypage").data("maxnum"),
-    limit: $("#laypage").data("limit"),
-    groups: 3,
+    count: parseInt($("#laypage").data("maxnum")),
+    limit: parseInt($("#laypage").data("limit")),
+    groups:2, //底部1234导航,超过2的显示...
     curr: location.pathname.replace("/page/", ""),
     jump(obj, f){
       $("#laypage a").each((i, v) => {
+       
         let pageValue = `/page/${$(v).data("page")}`
         v.href = pageValue
       })
